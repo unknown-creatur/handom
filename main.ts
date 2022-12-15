@@ -1,4 +1,7 @@
 input.onButtonPressed(Button.A, function () {
+    if (亮燈數 >= 25) {
+        亮燈數 = 24
+    }
     亮燈數 += 1
 })
 input.onButtonPressed(Button.AB, function () {
@@ -43,5 +46,5 @@ basic.forever(function () {
             數(a + 1)
         }
     }
-    basic.pause(2.5)
+    basic.pause(1000)
 })
